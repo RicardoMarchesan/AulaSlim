@@ -1,0 +1,13 @@
+{% extends 'utils/twig/templatelista.twig' %}
+
+{% block titulo %}
+  home-teste
+{% endblock %}
+
+{% block itens %}
+  <tr>
+    {% for atendimento in atendimentos %}
+        <td>{{atendimento.id_tipo}}<br>{{atendimento.id_paciente}}<br>{{atendimento.obs}}<br>{{atendimento.data}}<br>{{atendimento.retorno}}<br>{{atendimento.valor}}</td><br>
+    {% endfor %}
+  </tr>
+{% endblock %}

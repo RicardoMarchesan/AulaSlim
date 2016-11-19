@@ -1,0 +1,7 @@
+{% extends 'utils/twig/template.twig' %}
+
+{% block conteudo %}
+    {% for pessoa in pessoas %}
+        <li>{{pessoa.nome}}<br>{{pessoa.email}}<br>{{pessoa.fone}}</li><br>
+    {% endfor %}
+{% endblock %}

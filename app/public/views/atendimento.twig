@@ -1,0 +1,15 @@
+{% extends 'utils/twig/template.twig' %}
+
+{% block conteudo %}
+    <form action="{{ path_for('home') }}" method="post">
+        <input type="text" name="id_tipo" placeholder="Id Tipo Atendimento"/><br>
+        <input type="text" name="id_paciente" placeholder="Id do Paciente"/><br>
+        <input type="text" name="obs" placeholder="Observação"/><br>
+        <input type="text" name="data" placeholder="Data"/><br>
+        <input type="text" name="retorno" placeholder="Retorno"/><br>
+        <input type="text" name="valor" placeholder="Valor"/><br>
+        <input type="submit" value="Cadastrar"/>
+        <input type="reset" value="Limpar"/>
+    </form>
+
+{% endblock %}
